@@ -1,5 +1,5 @@
 <html>
-    <body>
+    <body bgcolor="pink">
         <h2> Formulario - 331 </h2>
         <form action = "dados.php" method = "post">
            Nome <input type="text" name="nome" size="10" maxlength="8"> <br><br>
@@ -13,7 +13,17 @@
            <input type="radio" name="turno"> Manhã <br>
            <input type="radio" name="turno"> Tarde <br>
            <input type="radio" name="turno"> Noite <br><br>
+           Escolha suas profs preferidas <br>
+           <select name=profs>
+            <option> Clau </option> <br>
+            <option> Latorre </option> <br>
+            <option> Miyuk </option> <br>
+           </select> <br><br>
 
+            <input type="range" id="volume" name="volume" min="0" max="100" value="50" step="10" > 
+            <span> 100 </span> <label for="volume"> Volume <label> <br><br>
+            <textarea rows="5" cols="10"> </textarea> <br>
            <input type="submit" value="Enviar">
+           <input type="reset" value="Limpar">
     </body>
 </html>
